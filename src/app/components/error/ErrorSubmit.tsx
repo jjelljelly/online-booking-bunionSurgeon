@@ -14,8 +14,8 @@ export function ErrorSubmit() {
                     <a href="tel:+442078208007">
                         <p>Tel: +44 207 820 8007</p>
                     </a>
-                    <a href="mailto:admin@londonfootandanklesurgery.co.uk">
-                        <p>Email: admin@londonfootandanklesurgery.co.uk</p>
+                    <a href="mailto:admin@bunionsurgeon.co.uk">
+                        <p>Email: admin@bunionsurgeon.co.uk</p>
                     </a>
                 </div>
             </div>
