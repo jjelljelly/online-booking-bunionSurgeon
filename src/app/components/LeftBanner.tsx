@@ -26,7 +26,7 @@ export function LeftBanner() {
     return (
         <div className={style.bannerWrap}>
             <div className={style.brand}>
-                <h2>London Foot & Ankle Surgery</h2>
+                <h2>The Bunion Surgeon</h2>
                 <h3>Schedule Your Appointment</h3>
             </div>
             <hr className={style.line} />
@@ -39,7 +39,7 @@ export function LeftBanner() {
                 <div className={progress === STEP_3 ? style.circleStep : style.circle}>3</div>
             </div>
             <hr className={style.line} />
-            <p className={style.copyright}>©2024, London Foot & Ankle Surgery Ltd.</p>
+            <p className={style.copyright}>©2025, Bunion Surgeon</p>
         </div>
     )
 }

@@ -7,14 +7,14 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: "comorant", serif;
-  color: #20365F;
+  color: #063b5e;
 }
 
 
 :root {
   --max-width: 1100px;
-  --dark-blue: #20365F;
-  --light-blue: #248ec2;
+  --dark-blue: #063b5e;
+  --light-blue: #b8c2d4;
 }
 
 * {
@@ -27,13 +27,13 @@ button {
   padding: 40px 30px;
   margin: 30px 20px;
   border-radius: 20px;
-  background-color: #248ec2;
-  border: solid 2px #248ec2;
+  background-color: #b8c2d4;
+  border: solid 2px #b8c2d4;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: rgba(36, 142, 194, .8);
+  background-color: rgba(161, 180, 214, .8);
   transition: 0.6s;
 }

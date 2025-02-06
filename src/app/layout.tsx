@@ -30,10 +30,10 @@ export default function Layout({
     <html lang="en">
       <body className={style.pageLayout}>
         <Head>
-          <title>London Foot & Ankle Surgery - Book An Appointment</title>
+          <title>Bunion Surgeon - Book An Appointment</title>
           <meta
             name="description"
-            content="Book an appointment quickly and easily online with our foot and ankle experts based at 17 Harley Street, London"
+            content="Book an appointment quickly and easily online with our Bunion Expert, Mr Kaser Nazir, at 17 Harley Street London"
           />
           <meta
             name="viewport"

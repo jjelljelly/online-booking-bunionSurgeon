@@ -66,26 +66,6 @@ export function Calendar() {
         } else {
             diaryType = info?.data?.kaserFinalAvailableDates ?? []
         }
-    } else if (patientData?.patientData?.appointment?.hasSpecialist(SPECIALIST.S_THOMAS)) {
-        if (patientData?.patientData.appointment.nurseRequired) {
-            if (patientData?.patientData.appointment.appointmentLength === 20) {
-                diaryType = info?.data?.stevenWithNurseAvailableDates20 ?? []
-            } else if (patientData?.patientData.appointment.appointmentLength === 40) {
-                diaryType = info?.data?.stevenWithNurseAvailableDates40 ?? []
-            } else if (patientData?.patientData.appointment.appointmentLength === 60) {
-                diaryType = info?.data?.stevenWithNurseAvailableDates60 ?? []
-            }
-        } else if (patientData?.patientData.appointment.appointmentLength === 20) {
-            diaryType = info?.data?.stevenFinalAvailableDates20 ?? []
-        } else if (patientData?.patientData.appointment.appointmentLength === 40) {
-            diaryType = info?.data?.stevenFinalAvailableDates40 ?? []
-        } else if (patientData?.patientData.appointment.appointmentLength === 60) {
-            diaryType = info?.data?.stevenFinalAvailableDates60 ?? []
-        }
-    } else if (patientData?.patientData?.appointment?.hasSpecialist(SPECIALIST.K_NAZIR_THEN_ST)) {
-        diaryType = info?.data?.kaserThenStevenAvailableDates ?? []
-    } else if (patientData?.patientData?.appointment?.hasSpecialist(SPECIALIST.S_THOMAS_KN)) {
-        diaryType = info?.data?.stevenWhilstKaserInClinicAvailableDates ?? []
     }
 
     const [appointmentDate, setAppointmentDate] = useState<dayjs.Dayjs>()

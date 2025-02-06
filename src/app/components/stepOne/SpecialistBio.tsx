@@ -35,31 +35,61 @@ export function SpecialistBio() {
             <div className={style.pageBreakDiv}>
                 <hr className={style.pageBreak} />
             </div>
-            <h2>Our Specialists</h2>
+            <h2>Meet the Surgeon</h2>
             <div className={style.cardContainer}>
-                {specialistBio?.map((specialist: any) => (
-                    <Card key={specialist.specialistName} className={style.card}>
-                        <Typography variant="body1" sx={{ color: 'text.secondary', paddingBottom: '5px', fontFamily: "comorant" }}>
-                            {specialist?.fields?.specialistName}
-                        </Typography>
-                        <Typography variant="body2" sx={{ color: 'text.secondary', paddingBottom: '5px', fontFamily: "comorant" }}>
-                            {specialist.speciality}
-                        </Typography>
-                        <Image
-                            width={250}
-                            height={250}
-                            className={style.image}
-                            src={'https:' + specialist.specialistPicture.fields.file.url}
-                            alt={specialist.specialistPicture.fields.title}
-                        />
-                        <hr className={style.line} />
-                        <CardContent>
-                            <Typography variant="body2" sx={{ color: 'text.secondary', fontFamily: "comorant" }}>
-                                {specialist.biography}
-                            </Typography>
-                        </CardContent>
-                    </Card >
-                ))}
+                {specialistBio?.reduce((accumulator: React.ReactNode[], specialist: Specialist) => {
+                    if (specialist.specialistName === "Mr Kaser Nazir") {
+                        accumulator.push(
+                            <Card key={specialist.specialistName} className={style.card}>
+                                <Typography variant="body1" sx={{ color: 'text.secondary', paddingBottom: '5px', fontFamily: "comorant" }}>
+                                    {specialist?.specialistName}
+                                </Typography>
+                                <Typography variant="body2" sx={{ color: 'text.secondary', paddingBottom: '5px', fontFamily: "comorant" }}>
+                                    {specialist.speciality}
+                                </Typography>
+                                <Image
+                                    width={250}
+                                    height={250}
+                                    className={style.image}
+                                    src={'https:' + specialist.specialistPicture.fields.file.url}
+                                    alt={specialist.specialistPicture.fields.file.fileName}
+                                />
+                                <hr className={style.line} />
+                                <CardContent>
+                                    <Typography variant="body2" sx={{ color: 'text.secondary', fontFamily: "comorant" }}>
+                                        {specialist.biography}
+                                    </Typography>
+                                </CardContent>
+                            </Card >
+                        )
+                    }
+                    return accumulator
+                }, [])
+                }
+                {/* ( */}
+                {/* // <Card key={specialist.specialistName} className={style.card}>
+                    //     <Typography variant="body1" sx={{ color: 'text.secondary', paddingBottom: '5px', fontFamily: "comorant" }}>
+                    //         {specialist?.fields?.specialistName}
+                    //     </Typography>
+                    //     <Typography variant="body2" sx={{ color: 'text.secondary', paddingBottom: '5px', fontFamily: "comorant" }}>
+                    //         {specialist.speciality}
+                    //     </Typography>
+                    //     <Image */}
+
+                {/* //         width={250}
+                    //         height={250}
+                    //         className={style.image}
+                    //         src={'https:' + specialist.specialistPicture.fields.file.url}
+                    //         alt={specialist.specialistPicture.fields.title}
+                    //     />
+                    //     <hr className={style.line} />
+                    //     <CardContent>
+                    //         <Typography variant="body2" sx={{ color: 'text.secondary', fontFamily: "comorant" }}>
+                    //             {specialist.biography}
+                    //         </Typography>
+                    //     </CardContent>
+                    // </Card >
+                // ))} */}
 
             </div >
         </>
