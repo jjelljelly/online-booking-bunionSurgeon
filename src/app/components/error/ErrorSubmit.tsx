@@ -11,8 +11,8 @@ export function ErrorSubmit() {
                 <div className={style.update}>
                     <p>Unfortunately we have experienced an error whilst booking your appointment.</p>
                     <p>Please either try arranging a time again or contact our team for assistance</p>
-                    <a href="tel:+442078208007">
-                        <p>Tel: +44 207 820 8007</p>
+                    <a href="tel:+442074594326">
+                        <p>Tel: +44 207 459 4326</p>
                     </a>
                     <a href="mailto:admin@bunionsurgeon.co.uk">
                         <p>Email: admin@bunionsurgeon.co.uk</p>

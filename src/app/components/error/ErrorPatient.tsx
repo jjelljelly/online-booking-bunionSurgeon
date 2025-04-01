@@ -12,8 +12,8 @@ export function ErrorPatient() {
                     <p>Unfortunately we could not locate your details</p>
                     <p>Please either try submitting your data again or contact our team for assistance</p>
                     <p>If you have not attended the clinic for more than one year please use the new appointment option</p>
-                    <a href="tel:+442078208007">
-                        <p>Tel: +44 207 820 8007</p>
+                    <a href="tel:+442074594326">
+                        <p>Tel: +44207 459 4326</p>
                     </a>
                     <a href="mailto:admin@bunionsurgeon.co.uk">
                         <p>Email: admin@bunionsurgeon.co.uk</p>

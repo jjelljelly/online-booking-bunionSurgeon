@@ -13,8 +13,8 @@ export function Completion() {
                     <p>Your appointment has been scheduled</p>
                     <p>A confirmation email will be sent shortly with full details</p>
                     <p>If you have any questions please do not hesitate to contact us</p>
-                    <a href="tel:+442078208007">
-                        <p>Tel: +44 207 820 8007</p>
+                    <a href="tel:+442074594326">
+                        <p>Tel: +44207 459 4326</p>
                     </a>
                     <a href="mailto:admin@bunionsurgeon.co.uk">
                         <p>Email: admin@bunionsurgeon.co.uk</p>
